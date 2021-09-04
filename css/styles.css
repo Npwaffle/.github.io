@@ -33,12 +33,17 @@ h1{
     padding-left:20%;
     padding-bottom:50px;
     margin-top:50px;
-    font-size:800;
 }
 
 /*aligning headings*/
 h2,h3{
     text-align:center;
+}
+
+/*aligning the two reading links*/
+.link{
+	margin-left:35%;
+    padding-bottom:10px;
 }
 
 /*make link colors and used link colors the same*/
@@ -113,7 +118,6 @@ aside{
     box-sizing:border-box;
     border-bottom:5px solid #457b9d;
     border-right:5px solid #457b9d;
-    font-size:800;
     float:left;/*somewhat superfluous*/
 }
 
@@ -121,7 +125,6 @@ aside{
 aside a{
     padding: 6px;
     text-decoration: none;
-    font-size:800;
     display:block;
     text-align:left;
 }
