@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--File: index.html
+GUI Homework 1
+Nicholas Park
+License: CC0 (Creative Commons 0); I like creative commons 0 and I have no intention of enforcing copyright / bothering to see if other people 
+copy my stuff. I am not linking any of my stuff to classmates of course, nor am I collaborating with any classmates (at least currently), 
+all of this code is my own and I am not sharing it by my own hand. Of course I am referencing the very useful Mozilla Developer Network HTML/CSS
+reference sheets so that I know what attributes are available to use.
+File Created: 9/3/21-->
+<html lang="en">
+    <head>
+        <!--A fairbit of this meta-data was auto-filled in when I hit "!" and Enter in vscode, which quickly creates an HTML file frame-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Manually filled in this stuff just for fun-->
+        <title>Home Page</title>
+        <!--The description and keywords is for the most part irrelevant given this isnt going to be posted on a standalone website-->
+        <meta name="descritpion" content="Umass Lowell GUI 1 Class Homework Site by Nicholas Park">
+        <meta name="keywords" content="GUI, homework, web design, personal site, umass lowell, Nicholas Park"
+        <!--Link the CSS Sheet-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!--Creating a sidebar, href set to #top sends to top of page, dogs and cats go to new pages, #secNUMBER sends to specific sections on this page-->
+        <aside id="hAside">
+            <table>
+                <thead>
+                    <th><a href="#top">Glossary</a></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="dogs.html">My Dogs</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="cats.html">My Cats</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#sec1">Summary of Readings</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#sec2">Syllabus Form</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#sec3">My Experience</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <!--Header 1-->
+        <header id ="main-header">
+            <h1>GUI Programming 1 :: Homework 1 :: Index Page</h1>
+        </header>
+
+        <!--Aside #sec1 links here-->
+        <!--Summary of Readings Section-->
+        <section id="sec1">
+            <article class="secArt">
+                <h2>Summary of Readings</h2>
+                <h3>Reading 1:</h3>
+                <!--Linking to Reading 1; target attribute set to _blank makes it open a new tab-->
+                <a href="https://github.com/kamranahmedse/developer-roadmap" target=_blank>Roadmap to Becoming a Web Developer</a>
+                <p>
+                    Upon skimming through the comprehensive charts, I returned back to sections I found of particular interest and
+                    followed the pathing and looked at the sub-topics for each node a little more closely. Having done a little bit
+                    of self-taught HTML and CSS in the week prior to starting this class I found myself in agreement when it came to
+                    the sub-topics of the nodes.
+                </p>
+                <p>
+                    For example: In the Front-end chart, the first node is "Internet" and the sub-topics of the node can be summarized as 
+                    "learn basic internet jargon" and "learn simple internet concepts". However I disagree that someone should immediately
+                    familiarize themselves with subjects such as DNS and how it works before going any further; unless its saying to just
+                    learn what DNS means, in which case I believe that to be fine.
+                </p>
+                <p>
+                    Otherwise, I agree with the flow charts, to the degree that I can ascertain their correctness/relativity to my own experience
+                    and I feel that they serve as a good predictor for the topics we should cover, either in class or personally, if we want
+                    to enter into the related fields. I also feel that the ordering for the most part is fine.
+                </p>
+            </article>
+            <article class="secArt">
+                <h3>Reading 2:</h3>
+                <!--Linking to Reading 2; target attribute set to _blank makes it open a new tab-->
+                <a href="https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c" target=_blank>A Guide to becoming a Full Stack Developer in 2017</a>
+                <p>
+                    Unlike the first reading (Reading 1, see above), this reading comes in the form of a blog/article post and it takes a more verbose
+                    approach to informing the user as to what topics they should learn/master if they wish to pursue the full-stack position.
+                    Once again, I agree with most of the contents present and also agree with the order that the contents are displayed for the most part,
+                    however version control such as Git should be introduced sooner as version control is omni-present in any computer science field and very important.
+                </p>
+                <p>
+                    This article can effectively be summarized to be a series of categorized topic lists, with a little bit more introduction for each category
+                    and a little bit more explanation going into each sub-topic compared to the flowcharts of Reading 1. That being said, because it is more
+                    verbose it is simultaneously less comprehensive. The flow-chart listed practically every topic under the sun with a little bit more specificity
+                    but less information per topic; whereas this article is a little less comprehensive but a fair bit more descriptive. Overall, I would recommend
+                    Reading 2 to someone who is looking to get their foot in the door learning the material, someone who might not know as much about the field; while
+                    I would recommend Reading 1 more to someone looking to build a comprehensive topic checklist.
+                </p>
+                <h3>Final Word on the Readings</h3>
+                <p>
+                    For the most part, I can say the subjects of both readings were well-presented, personally I liked the flow-chart more because flow-charts done well,
+                    like Reading 1's, are very nice and easy to follow and can convey more information with fewer words than articles like Reading 2. However, I felt
+                    Reading 2 to be a much better and more narrow introduction to the field and knowledge expectations.
+                </p>
+            </article>
+        </section>
+
+         <!--Aside #sec2 links here-->
+         <!--Syllabus Certification Form Section-->
+        <section id="sec2">
+            <article class="secArt">
+                <h2>Completed Syllabus Certification Form:</h2>
+                <!--Using iframe to show a preview of the pdf on the same page; im hijacking google drive's pdf viewer to do it half-decently without involving JS-->
+                <iframe src="https://drive.google.com/file/d/1hD7GcKuphMipxjBqCqo5Vel9npVzTvF-/preview" allow="autoplay"></iframe>
+                <!--linking to the pdf file; for some reason the download tag isnt working, either I didnt implement it right, or without
+                further extended functionality it wont auto-download, at least with pdfs. Im not broken up over this and wont fixate on it
+                to get it working, at least for this assignment.-->
+                <a id="dll" href="files/Syllabus_Certification_Complete.pdf" download="Syllabus_Certification_Complete.pdf" target=_blank >Download PDF</a>
+            </article>
+        </section>
+
+         <!--Aside #sec3 links here-->
+         <!--Personal Experience Section-->
+        <section id="sec3">
+            <article class="secArt">
+                <h2>My Experience with HTML/CSS/JavaScript</h2>
+                <p>
+                    I just wanted to take the time to add some commentary on my experience working with these 3 pieces of web design. As far as 
+                    experience goes, I dont really have too much, this is my first time actually trying to make an index page that is more than
+                    just some nonsense typed out while following a tutorial. I started my self-teaching about 3/4ths of the way through
+                    August. I spent a fair bit of this summer trying to expand my knowledge with various languages, GML, Java, Python, and C# were some
+                    of my focuses. I started the process of learning HTML/CSS/Java by watching 3 videos on YouTube, the youtube channel Traversy Media
+                    had 3 Crash Course videos which I watched in the order of HTML -> CSS -> JavaScript. Each video was ~1-2 hours long, the process
+                    itself taking longer if you typed-along like I did for the most part.
+                </p>
+                <h3>Links:</h3>
+                <!--unordered list-->
+                <ul id="linkList">
+                    <li><a href="https://www.youtube.com/watch?v=UB1O30fR-EE" target=_blank>HTML Crash Course For Absolute Beginners</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=yfoY53QXEnI" target=_blank>CSS Crash Course For Absolute Beginners</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" target=_blank>JavaScript Crash Course For Beginners</a></li>
+                </ul>
+                <p>
+                    After these 3 videos, of which the JavaScript one was the only one I stopped most of the way through (because its rather simple
+                    content for anyone familiar with programming, though it is still useful to learn the semantics), I then proceeded to go through
+                    the first 1/4th of a course on Udemy which re-iterated a bit more indepth on the contents of the 3 above videos in the first 1/4th.
+                    I will likely continue to use the course on Udemy to self-teach the content as supplemental reading alongside the course itself.
+                </p>
+                <p>
+                    I am looking towards a fun year, especially since the assignments in this class will give me a target product to work towards while
+                    learning the subject. Ultimately, im not sure if I am seeking to really break into the web-dev field and I moreso pursued these topics
+                    purely out of interest and a desire to be qualified to add "Front End Web Dev" to the list of entry-level job titles I can apply for 
+                    as I pursue jobs throughout this semester. This is my last semester at Lowell and I am hoping to make it a good one.
+                </p>
+                <p>
+                    As an extra, feel free to use the navbar if you want to see a little bit about my pets, as my pets are a big part of my life and always will be
+                    treated like family. Hopefully all of this is substantial enough to satisfy the requirements of homework 1.
+                </p>
+            </article>
+        </section>
+        <!--Little notation section just for fun-->
+        <p><cite>page created: 9/3/21 by Nicholas Park</p>
+    </body>
+</html>

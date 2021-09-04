@@ -1,0 +1,162 @@
+/*File: styles.css
+GUI Homework 1
+Nicholas Park
+License: CC0 (Creative Commons 0); I like creative commons 0 and I have no intention of enforcing copyright / bothering to see if other people 
+copy my stuff. I am not linking any of my stuff to classmates of course, nor am I collaborating with any classmates (at least currently), 
+all of this code is my own and I am not sharing it by my own hand. Of course I am referencing the very useful Mozilla Developer Network HTML/CSS
+reference sheets so that I know what attributes are available to use.
+File Created: 9/3/21*/
+
+/*Zero out everything*/
+*{
+    margin:0;
+    padding:0;
+}
+/*giving some page-wide rules, at least for the body*/
+body{
+    background-color:#1d3557;
+	color:#f1faee;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:18px;
+	font-weight:normal;
+    line-height:1.6em; /*line height = 1.6x the font-size*/
+}
+
+/*giving first heading of each page some formatting*/
+h1{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 8px;
+    width: 50%;
+    padding: 10px;
+    padding-left:20%;
+    padding-bottom:50px;
+    margin-top:50px;
+    font-size:800;
+}
+
+/*aligning headings*/
+h2,h3{
+    text-align:center;
+}
+
+/*make link colors and used link colors the same*/
+a,a.visited{
+    color:#a8dadc;
+}
+
+/*changing all paragraphs; giving first line indent and some padding
+making it take 90% of page as well*/
+p{
+    text-indent: 30px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+    width:90%;
+}
+
+/*technically I couldve used the same class for both of these
+however I left them seperate so I could make one different if 
+I wanted to.*/
+.petArt{
+	width:80%;
+	margin-left:15%;
+    padding: 0px 10px;
+}
+.secArt{
+	width:80%;
+	margin-left:15%;
+    padding: 0px 10px;
+}
+/*make all pictures somewhat uniform, verticality mostly not uniform
+would look ugly if it was unless I edit the pictures to make it uniform*/
+img{
+    display:block;
+    border-radius: 16px;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    height: auto;
+    padding-bottom:40px;
+}
+/*specifcally format the pdf viewer I borrowed from google*/
+iframe{
+    display:block;
+    border-radius: 16px;
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+    height: 640px;
+    padding-bottom:40px;
+}
+/*specifically place/format pdf 'download' link, even though 
+it doesnt really work*/
+#dll{
+    width: 50%;
+	margin-left:15%;
+    margin-right:auto;
+    margin-bottom:60px;
+}
+
+/*formatting sidebar*/
+aside{
+    min-width:190px;/*prevent squishing*/
+    position:fixed;/*sidebar moves with view*/
+    z-index: 1;/*make sure sidebar is on top*/
+    overflow-x: hidden;/*no scrollbars*/
+    overflow-y: hidden;/*no scrollbars*/
+    top: 0;/*position from top*/
+    left: 0;/*position from left*/
+    background-color:#006d77;
+    color:#edf6f9;
+    padding-top:10px;
+    box-sizing:border-box;
+    border-bottom:5px solid #457b9d;
+    border-right:5px solid #457b9d;
+    font-size:800;
+    float:left;/*somewhat superfluous*/
+}
+
+/*formatting table links*/
+aside a{
+    padding: 6px;
+    text-decoration: none;
+    font-size:800;
+    display:block;
+    text-align:left;
+}
+
+/*giving table and elements borders*/
+aside table, th, td{
+    border:1px solid #f1faee;
+}
+
+/*giving table data elements in the sidebar a uniform width*/
+aside td{
+    min-width:190px;
+}
+/*just moving my little 'page created notation at bottom of each page*/
+cite{
+    padding-left:50%;
+}
+
+/*self-explanatory, giving it some room, getting rid of bullet points
+this is specifically for the links to the 3 youtube videos which are
+somewhat short text-wise and need to be fairly center-oriented*/
+#linkList{
+    text-align:center; 
+    margin-bottom:20px; 
+    list-style-type:none; 
+}
+
+/*Specifically format the cat honorable mentions
+the list elements are multi-line and quite wide
+using indent to make first line of each list item slightly
+on the left, whereas the rest will be slightly on the right*/
+#honorable li{
+    text-indent: -30px;
+    margin-left: 80px;
+    text-align:left;
+    padding-bottom: 20px;
+    width: 80%;
+}
