@@ -1,0 +1,107 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+/*apply the background gradient and make sure it takes up the page*/
+body {
+	background-image: url('ptrbackground.jpg');
+	background-repeat:repeat-x;
+	background-color:#00569f;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*format, size, and center the page's content*/
+#wrapper {
+	min-width:600px;
+	width: 80%;
+	margin-left:auto;
+    margin-right:auto;
+	height:100%;
+	background:linear-gradient(to right,#90c8e3 200px, white 200px 100%); /*This is a life saver*/
+}
+/*format the nav unordered list and make sure theres no bullet points*/
+nav ul {
+	margin-left: 20px;
+	padding-left: 0px;
+	list-style-type: none;
+	font-size: 1.2em;
+}
+/*remove the text underlines in the navbar*/
+nav a{
+	text-decoration:none;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+/*separate and format the nav bar*/
+nav{
+	float:left;
+	display:block;
+	width: 200px;
+	box-sizing:border-box;
+	font-weight:bold;
+	overflow:hidden;
+}
+/*mess with the page top banner*/
+h1 {
+	display:block;
+	background-color: #000032;
+	background-image: url('sunset.jpg');
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #ffffff;
+	margin-bottom: 0;
+	padding: 10px;
+}
+/*mess with the content and footer spacing*/
+#content, footer{
+	margin-left: 200px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+}
+/*mess with the content spacing*/
+#content{
+	padding-top: 10px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+/*separate the image*/
+#content img{
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+/*position the unordered list; list-style-position is used to line the bullet points up with the pargraphs*/
+#content ul{
+	padding-left:40px;
+	list-style-position:inside;
+}
+/*replace bullet point image*/
+#content li{
+	list-style-image:url('marker.gif');
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", serif;
+}
+/*Target any time the resort is named in the paragrahs (targeting the spans)*/
+.resort{
+	font-weight: bold;
+	color:#73729c;
+}
+
