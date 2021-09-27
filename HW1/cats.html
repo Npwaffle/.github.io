@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--File: cats.html
+GUI Homework 1
+Nicholas Park
+License: CC0 (Creative Commons 0); I like creative commons 0 and I have no intention of enforcing copyright / bothering to see if other people 
+copy my stuff. I am not linking any of my stuff to classmates of course, nor am I collaborating with any classmates (at least currently), 
+all of this code is my own and I am not sharing it by my own hand. Of course I am referencing the very useful Mozilla Developer Network HTML/CSS
+reference sheets so that I know what attributes are available to use.
+File Created: 9/3/21-->
+<html lang="en">
+    <head>
+        <!--A fairbit of this meta-data was auto-filled in when I hit "!" and Enter in vscode, which quickly creates an HTML file frame-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--page title-->
+        <title>My Cats</title>
+        <!--Link the CSS Sheet-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!--Creating a sidebar, href set to #top sends to top of page, home and dogs go to new pages, various cat names send to specific sections on this page-->
+        <aside id="cAside">
+            <table>
+                <thead>
+                    <th><a href="#top">Glossary</a></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="index.html">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="dogs.html">My Dogs</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="cats.html">My Cats</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#pretty-kitty">Pretty-Kitty</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#pepper">Pepper</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#nero">Nero</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#honorable">Honorable Mentions</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <header id ="main-header">
+            <h1>GUI Programming 1 :: Homework 1 :: My Cats</h1>
+        </header>
+
+        <!--I use sections here to make it easier to differentiate the cats, additionally because I may add things before/after the articles
+        or should I decide to revisit later, it is possible I might add more articles. Ultimately though, I didnt have to do articles and
+        couldve just done sections-->
+        <!--Most of the content the rest of this document is self-explanatory; h2, h3 are headings, and img is for images-->
+
+        <section id="pretty-kitty">
+            <article class="petArt">
+                <h2 class="petName">Pretty-Kitty</h2>
+                <h3 class="petSpecies">Calico</h3>
+                <img src="files/img/pretty_kitty.jpg" alt="watchful pretty kitty">
+                <p>
+                    Pretty Kitty is the one constant cat that I grew up with, every stage of my life up until I left for college she was right There
+                    with me. Her history is long, and her personality was unknowable. Like many cats she acted as she pleased; she had a streak of distrust
+                    for men and she was definitely a reserved cat even around those she was comfortable with. Rarely, if ever, would she jump up in a lap and 
+                    there were very few times she desired to go outside. She lived a peaceful and kind life, sometimes acting as a mouser, but more often than not
+                    when she made herself available she was an easy-going cat who liked to be at the edge of family activities. She was skittish around strangers and 
+                    there was always a period she would display immense amounts of disdain and even hatred towards new pets. In her later years she came to trust me, 
+                    I took pride in the fact she would let me pick her up and hold her and she would even come to me to sleep on the couch near me or ask me to pet her.
+                    Her love for fancy feast was a constant throughout her life, and some of the only times she would vocalize was when she was demanding fancy feast.
+                </p>
+            </article>
+        </section>
+        <section id="pepper">
+            <article class="petArt">
+                <h2 class="petName">Pepper</h2>
+                <h3 class="petSpecies">Silver Tabby</h3>
+                <img src="files/img/pepper.JPG" alt="sleepy pepper">
+                <p>
+                    Pepper was my personal and beloved cat. The whole family loved pepper, but none so more than I. I remember choosing him out of a litter of kittens on one 
+                    summer eve. I still remember two things about his kitten-hood, one) we thought he was a she, two) he was absolutely flea-ridden. The second issue
+                    was somewhat quickly resolved, the first issue took a month or two. Originally, we wanted a female cat so that the cat would be lower-energy and more 
+                    indoorsy; Pepper himself was adopted following Frosty, another cat which will be mentioned below in <a href="#honorable">Honorable Mentions,</a> hence 
+                    why we were looking to adopt a female cat. Regardless, pepper turned out to be a fantastic cat with a great personality; he had insanely good compatibility 
+                    with dogs and got along famously with all of the dogs we owned throughout his life; he had a special relationship with Scout where they would groom eachother and 
+                    sleep near eachother. Pepper was the kind of cat that followed us around outside in the yard, always interested in what we were doing. He would follow us up
+                    the road to the bus stop and even around the house, his curiosity was second to none. He was also an accomplished predator, he and Nero were like the cat mafia, 
+                    they would regularly catch woodland critters and set their heads out as display threats to the others; morbid, and really annoying to clean up, but still a trait 
+                    we fondly remember, of course forgetting the disgusting cleanup aspects.
+                </p>
+            </article>
+        </section>
+        <section id="nero">
+            <article class="petArt">
+                <h2 class="petName">Nero</h2>
+                <h3 class="petSpecies">Silver Tabby</h3>
+                <img src="files/img/nero.JPG" alt="nero on a roof">
+                <p>
+                    Nero, the 'heckin chonk' of the cat mafia. Born to a feral cat in Galveston, Texas, we got Nero as a kitten from one of my uncles. Nero was always a devilish and dapper
+                    cat and he was good at three things: 1) vomiting, 2) getting on the roof (as seen above), 3) being the sidekick. The first one is both a joke and not, in his later years 
+                    he had the nickname 'vomit comet' because he would vomit, move, vomit while evading capture (to try to put him outside), but in his earlier years while Pepper was still alive,
+                    Nero was always following Pepper around as if Pepper was the wise grandmaster of critter slaying; while Pepper didnt really eat his kills, Nero sure had no issue with eating 
+                    his own kills and Pepper's kills, hence why he became the absolute unit he was. I personally believe his illness later in life was due to something he contracted from all the rodents 
+                    he ate, or a side effect from consuming poisoned rodents, a theory we will never confirm but we also believe is what took Pepper from us. Nero was great though, a real softie, he would
+                    frequently come around for attention and he would headbutt you to make sure he got it, he would stand up on his hind legs to push himself into your hand but he would also just straight up 
+                    slam his noggin into your face, arm, leg, any part of you really, to get attention. We all loved him and despite being the source of many messes and smells later in his life, he was 
+                    one of the best cats we had.
+                </p>
+                <img src="files/img/maggie_pepper_nero.JPG" alt="maggie, pepper, and nero">
+            </article>
+        </section>
+        <section id="honorable">
+            <article class="petArt">
+                <h2 class="petName">Honorable Mentions</h2>
+                <p>
+                    There are many cats I interacted with throughout my life, some spent shorter amounts of time than others with our family due to underlying circumstances. These two are worth noting as they
+                    entered my family's household but sadly could not stay.
+                    <!--unordered list-->
+                    <ul>
+                        <li><b>Francis:</b> Named after the Malcolm in the Middle character, we found Francis as a stray in Michigan, we only kept him for one night before giving him over
+                            to a shelter. We wouldve kept him longer had he not had the nastiest accident under my little brother's crib, an accident which caused us to vomit profusely that night.
+                        </li>
+                        <li><b>Frosty:</b> A stray siamese kitten I picked up off the streets of Austin, Texas. I kept Frosty for a long time and loved him a lot, he was a fantastic cat but he 
+                            really butted heads with Pretty-Kitty and they got into fights. Since they were not compatible we ended up giving Frosty to a family friend, Frosty lived a comfortable life
+                            with them. This experience of Pretty-Kitty butting heads with Frosty, a male cat, is the reason we initially got Pepper hoping he was a female cat.
+                        </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <!--Little notation section just for fun-->
+        <p><cite>page created: 9/3/21 by Nicholas Park</p>
+    </body>
+</html>
