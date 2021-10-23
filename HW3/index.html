@@ -1,0 +1,49 @@
+<!--Nicholas Park GUI HW 3 HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table [HW 3]</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="textBox"> <!--Top of Page Text-->
+        <h1>GUI HW 3: Multiplication Table</h1>
+        <h2>Created by: Nicholas Park</h2>
+    </div>
+    <div id="typeBox">  <!--Data Entry Section-->
+        <form onsubmit = "return false">
+            <label for="hStart">Minimum Number [Row]</label>
+            <input type="number" id="hStart" name="hStart">
+            <label for="hEnd">Maximum Number [Row]</label>
+            <input type="number" id="hEnd" name="hEnd">
+            <label for="vStart">Minimum Number [Column]</label>
+            <input type="number" id="vStart" name="vStart">
+            <label for="vEnd">Maximum Number [Column]</label>
+            <input type="number" id="vEnd" name="vEnd">
+            <input id="submit" type="submit" value="Generate Table">
+        </form>
+    </div>
+    <div id="explanationBox">   <!--Details/Instructions Section-->
+        <h2>Details:</h2>
+        <p>
+            Please enter a minimum value and maximum value in the column and row sections and then press "Generate Table" to create a table displaying the values and their
+            results when multiplied together.
+        </p>
+        <ul>
+            <li>If a value is not entered then an unentered minimum value will default to -12 and an unentered maximum value will default to 12.</li>
+            <li>If an invalid value is entered then the default value will be used instead.</li>
+            <li>If a value with a decimal is entered the value will be rounded down to a whole number.</li>
+            <li>If the minimum value is larger than the maximum value then the values will be swapped</li>
+        </ul>
+    </div>
+    <div id="debugger"> <!--Debug Log Section for user-->
+    </div>
+    <div id="tableContainer">   <!--Where the table is being placed-->
+
+    </div>
+    <script src="scripts/table.js"></script> <!--Call script at end-->
+</body>
+</html>
