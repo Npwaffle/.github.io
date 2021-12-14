@@ -1,0 +1,61 @@
+<!--Nicholas Park GUI HW 5 HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI HW 5 : Partial Scrabble</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+    <link rel = "stylesheet" href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+    <div id="pageTitle">
+        <h1>GUI HW 5 : Partial Scrabble</h1>
+        <h2>Created by: Nicholas Park</h2>
+    </div>
+    <div id ="board">
+        <img class = "tile" id="sp1" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp2" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp3" src ="images/board_dbl_word.png" alt="Double Word Space">
+        <img class = "tile" id="sp4" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp5" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp6" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp7" src ="images/board_dbl_letter.png" alt="Double Letter Space">
+        <img class = "tile" id="sp8" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp9" src ="images/board_dbl_letter.png" alt="Double Letter Space">
+        <img class = "tile" id="sp10" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp11" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp12" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp13" src ="images/board_dbl_word.png" alt="Double Word Space">
+        <img class = "tile" id="sp14" src ="images/board_blank.png" alt="Blank Space">
+        <img class = "tile" id="sp15" src ="images/board_blank.png" alt="Blank Space">
+    </div>
+    <br>
+    <div>
+        <h3 id="scoreHeader">Word Score = 0     ||      Total Score = 0</h3>
+    </div>
+    <br>
+    <div id="btn_squad">
+        <button type="button" class = "btn" id="submit" onclick="tallyWord()">Submit Word</button>
+        <button type="button" class = "btn" id="softReset" onclick="softResetGame()">Reset Rack</button>
+        <button type="button" class = "btn" id="hardReset" onclick="hardResetGame()">Reset Game</button>
+    </div>
+    <br>
+    <div id ="rack">
+        <!--<img id="rackImg" src ="images/scrabble-tile-holder-406774_640.png" alt="Scrabble Tile Holder">-->
+    </div>
+    <div><!--Unimplemented-->
+        <!--<h3>Submitted Words ::</h3>-->
+        <br>
+        <div id ="list">
+            <!--Where to put a list of words that have been submitted-->
+        </div>
+    </div>
+</body>
+</html>

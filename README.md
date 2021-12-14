@@ -12,3 +12,5 @@ Inclass 5: https://npwaffle.github.io/inclass5/example.html
 HW4 Part 1: https://npwaffle.github.io/hw4_part1/index_hw4.html
 >
 HW4 Part 2: https://npwaffle.github.io/hw4_part2/index_hw4.html
+>
+HW 5: https://npwaffle.github.io/hw5/index_hw5.html
